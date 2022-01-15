@@ -1,0 +1,94 @@
+# Background 1
+rounded = 8
+border_width = 0
+border_sides = BL BR
+background_color = #0D1525 100
+
+# Background 2
+rounded = 4
+border_width = 0
+border_sides = TBLR
+background_color = #2C3850 100
+
+# Background 3
+rounded = 8
+border_width = 3
+border_sides = TBLR
+background_color = #0D1525 100
+border_color = #2C3850 100
+
+
+# Panel
+panel_items = PCTPPP
+panel_size = 100% 50
+panel_margin = 120 10
+panel_padding = 10 5
+panel_background_id = 1
+panel_position = top center horizontal
+panel_monitor= all
+panel_window_name = tint2
+
+# Powermenu
+button =  new
+button_padding = 15 15
+button_text = 
+button_lclick_command = ~/.config/rofi/bin/powermenu
+button_font = IosevkaNerdFont 12
+button_font_color = #f65b5b 100
+
+# Taskbar
+#taskbar_name = 1
+taskbar_name_padding = 20
+taskbar_name_background_id = 1
+taskbar_name_active_background_id = 1
+taskbar_name_font_color = #a0a0b4 100
+taskbar_name_active_font_color = #a0a0b4 100
+taskbar_name_font = IosevkaCustom 11
+taskbar_mode = single_desktop
+
+# Task
+task_centered = 1
+task_text = 1
+task_maximum_size = 500
+task_background_id = 1
+task_padding = 0 0
+task_active_background_id = 2
+task_font_color = #a0a0b4 100
+task_font = IosevkaCustom 11
+mouse_middle = none
+mouse_right = iconify
+
+
+
+# Menu
+button = new
+button_padding = 15
+button_text = 
+button_lclick_command = discord
+button_font = IosevkaNerdFont 13
+button_font_color = #a0a0b4 100
+button_background_id = 1
+
+# Terminal
+button = new
+button_padding = 15 15
+button_text = 
+button_lclick_command = kitty
+button_font = IosevkaNerdFont 16
+button_font_color = #a0a0b4 100
+
+# Librewolf
+button = new
+button_padding = 15 15
+button_text = 
+button_lclick_command = firefox
+button_font = IosevkaNerdFont 12
+button_font_color = #a0a0b4 100
+
+# Clock
+time1_format = %H:%M
+time1_font = IosevkaCustom 11
+clock_font_color = #a0a0b4 100
+clock_background_id = 3
+
+

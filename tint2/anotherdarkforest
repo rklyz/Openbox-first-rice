@@ -1,0 +1,82 @@
+# Background1
+rounded = 8
+border_width = 0
+border_sides = TBLR
+background_color = #0D1525 100
+
+# Background2
+rounded = 8
+border_width = 0
+border_sides = TBLR
+background_color = #2C3850 100
+
+# Panel
+panel_items = TPPPEECP
+panel_size = 100% 50
+panel_margin = 120 10
+panel_padding = 10 5 30
+panel_background_id = 1
+panel_position = top center horizontal
+panel_monitor= all
+panel_window_name = tint2
+
+# Taskbar
+taskbar_name = 1
+taskbar_name_padding = 20
+taskbar_name_background_id = 2
+taskbar_name_active_background_id = 2
+taskbar_name_font_color = #a0a0b4 100
+taskbar_name_active_font_color = #a0a0b4 100
+taskbar_name_font = IosevkaCustom 12
+taskbar_mode = single_desktop
+taskbar_padding = 0 0 40
+
+# Task
+task_centered = 1
+task_icon = 0
+task_text = 1
+#task_maximum_size = 300
+task_padding = 0 0
+task_active_background_id = 2
+task_font_color = #B3CAC9 100
+task_font = IosevkaCustom 11
+mouse_middle = none
+mouse_right = iconify
+
+#  Menu
+button = new
+button_text = 
+button_tooltip = Rofi
+button_centered = 1
+button_lclick_command = rofi -show drun &
+button_font = IosevkaNerdFont 12
+button_font_color = #B3CAC9 100
+
+# Terminal
+button = new
+button_text = 
+button_tooltip = Kitty
+button_centered = 1
+button_lclick_command = kitty &
+button_font = IosevkaNerdFont 16
+button_font_color = #B3CAC9 100
+
+# Firefox
+button = new
+button_text = 
+button_tooltip = Firefox
+button_centered = 1
+button_lclick_command = firefox &
+button_font = IosevkaNerdFont 12
+button_font_color = #B3CAC9 100
+
+# Volume
+execp = new
+execp_command = echo  $(amixer -D pulse get Master | grep '%' | head -n 1 | cut -d '[' -f 2 | cut -d ']' -f 1)
+execp_interval = 1
+execp_font = IosevkaNerdFont 12
+execp_font_color = #B3CAC9 100
+execp_padding = 5
+execp_tooltip = Volume...
+execp_uwheel_command = pactl set-sink-volume @DEFAULT_SINK@ +5%
+execp_dwheel_command = pactl set-sink-volume @DEFAULT_SINK@ -5%
